@@ -1,9 +1,11 @@
 <?php
 //Topico 1:
-    // $conteudo = file_get_contents("texto.txt");
+    // $arq = fopen("texto.txt","r") or die("Não foi possivel ler esse arquivo");
+    // //$arq = file_get_contents("texto.txt");
 
-    // echo $conteudo;
+    // echo fread($arq, filesize("texto.txt"));
 
+    // fclose($arq);
 //Topico 2:
     // $num = 5;
     // $fatorial = $num;
@@ -25,5 +27,6 @@
     // }
 
 //Topico 4:
-        
+    date_default_timezone_set("America/sao_paulo"); //configura a data para o fuso-horario de saopaulo.
+    echo "Data e hora: ".date("d/m/Y H:i:s");
 ?>
